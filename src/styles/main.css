@@ -1,0 +1,32 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: "Unbounded", sans-serif;
+    transition: .3s;
+}
+
+.body-no-scroll {
+    overflow: hidden;
+}
+
+.content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+.content.show {
+  opacity: 1;
+}
+
+.container {
+    padding: 0 80px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 50px;
+    }
+}

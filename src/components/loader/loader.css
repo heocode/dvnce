@@ -1,0 +1,48 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 1000;
+    transition: opacity 0.5s ease, visibility 0.5s;
+  }
+  
+  .loader.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* основные стили для контента */
+  .content {
+    transition: opacity 0.5s ease;
+  }
+  
+  .content.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .content.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* disable scroll when intro is showing */
+  .body-no-scroll {
+    overflow: hidden;
+  }

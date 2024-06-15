@@ -1,0 +1,134 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Убедитесь, что z-index достаточно высокий, чтобы header был на переднем плане */
+    background-color: rgba(0, 0, 0, 0.8); /* Черный цвет с 80% непрозрачностью */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row__img {
+    width: 150px;
+}
+
+.row__img-item {
+    width: 150px;
+}
+
+.row__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.row__list-item {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-image: linear-gradient(
+        to right,
+        #d00040,
+        #d00040 50%,
+        white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.row__list-item:before{
+    content: '';
+    background: #d00040;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.row__list-item:hover {
+    background-position: 0;
+}
+   
+.row__list-item:hover::before{
+    width: 100%;
+}
+
+.row__list-item {
+    font-size: 20px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-menu__icon {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 992px) {
+    .row__list {
+      display: none;
+      overflow-y: hidden;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+    }
+  
+    .row__list--open {
+      display: flex;
+    }
+  
+    .burger-menu {
+      display: block;
+      z-index: 10;
+      color: #d00040;
+    }
+}
+
+@media (max-width: 768px) {
+    .row__img {
+        width: 100px;
+    }
+
+    .row__img-item {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row__img {
+        width: 80px;
+    }
+
+    .row__img-item {
+        width: 80px;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+  
