@@ -1,5 +1,6 @@
 # What is this web-site about?
 This site is about my event management company.<br/><br/>
+Этот сайт посвящен моей компании по организации мероприятий.
 
 # What kind of functionality?
 The site turned out to be very functional, it has such features as: **filtering of events, collapsed lists, mobile navigation, adaptation for different devices, multi-page**.<br/><br/>
