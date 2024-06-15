@@ -1,3 +1,10 @@
+# What is this web-site about?
+This site is about my event management company.
+
+# What kind of functionality?
+The site turned out to be very functional, it has such features as: ***filtering of events, collapsed lists, mobile navigation, adaptation for different devices, multi-page***.
+Also in the near future I want to add to this site such features: ***admin panel to add events by hand, not by code, form of sending messages to mail***
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
