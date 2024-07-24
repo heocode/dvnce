@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import Loader from './components/loader/loader';
 import Header from './components/header/header';
 import Info from './components/info/info';
@@ -10,7 +9,6 @@ import Footer from './components/footer/footer';
 import About from './components/about/about';
 import ScrollToTop from './components/scrolltotop';
 import Photos from './components/photos/photos';
-import ErrorPage from './components/error/error';
 
 function App() {
     const [showIntro, setShowIntro] = useState(() => {
@@ -48,8 +46,6 @@ function App() {
                         <Route path="/events/:eventId" element={<About />} />
                         <Route path="/" element={<MainContent />} />
                         <Route path="/photos" element={<Photos />} />
-                        {/* Перехватываем все остальные маршруты */}
-                        <Route path="/error" element={<ErrorPage />} />
                     </Routes>
                     <Questions />
                     <Footer />

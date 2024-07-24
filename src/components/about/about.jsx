@@ -1,10 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import AboutPage from './aboutpage/aboutpage'; // Импорт компонента AboutPage
-import xxxmanera from '../../img/manera.png';
-import madk1d from '../../img/madk1d.png';
-import lizer from '../../img/lizer.png';
-import aquakey from '../../img/aquakey.png';
+import xxxmanera from '../../img/manera.webp';
+import madk1d from '../../img/madk1d.webp';
+import lizer from '../../img/lizer.webp';
+import aquakey from '../../img/aquakey.webp';
+import sbomba31 from '../../img/sbombmos.webp';
+import sbomba31sp from '../../img/sbombspb.webp';
 
 function About() {
   // Получаем параметр eventId из маршрута
@@ -22,7 +24,7 @@ function About() {
           На нашей тусовке для вас выступят такие именитые гости, как <a href="https://vk.com/xxxmanera">xxxmanera</a> и <a href="https://vk.com/josodo_official">Josodo</a>, которые исполнят для вас свои нашумевшие треки и новый материал<br />
         </p>
       ),
-      aboutBtn: "Посмотреть фотки",
+      aboutBtn: "Посмотреть фото",
       aboutSrc: '/photos', 
       aboutImg: xxxmanera,
     },
@@ -35,8 +37,8 @@ function About() {
           Рэп, рок и панк - это всё про него. madk1d впервые выступит в Оренбурге, чтобы порадовать вас своими хитами, такие как <a href="https://vk.com/audio-2001137058_110137058">«Толпы»</a>, <a href="https://vk.com/audio-2001646140_120646140">«Барыга»</a>, а также исполнит для вас новые релизы<br/>
         </p>
       ),
-      aboutBtn: "Купить билеты",
-      aboutSrc: "https://orenburg.qtickets.events/115354-dance-x-madk1d", 
+      aboutBtn: "Фотки позже",
+      aboutSrc: "/photos", 
       aboutImg: madk1d,
     },
     {
@@ -61,9 +63,35 @@ function About() {
           А разогревать вас своими сетами будет dj Haru Matsui.
         </p>
       ),
-      aboutBtn: "Купить билеты",
-      aboutSrc: "https://spb.qtickets.events/116639-aquakey", 
+      aboutBtn: "Посмотреть фото",
+      aboutSrc: "/photos", 
       aboutImg: aquakey,
+    },
+    {
+      id: 'sbombamsc',
+      aboutTitle: "SBOMBA31 & DAYERTEQ",
+      aboutText: (
+        <p>
+          Александр и Макар авторы таких нашумевших треков, как <a href="https://vk.com/audio-2001149889_128149889">panacea</a>, <a href="https://vk.com/audio-2001149891_128149891">moet&chandon</a>,  <a href="https://vk.com/audio-2001149892_128149892">squirt game</a>, <a href="https://vk.com/audio602278261_456241567_f8ddf20537e056d24f">beztebya</a>, <a href="https://vk.com/audio-2001372001_127372001">Я так обожаю</a>. <br/>
+          Артисты исполнят для вас свои нашумевшие треки и множество нового материала
+        </p>
+      ),
+      aboutBtn: "Купить билет",
+      aboutSrc: "https://moscow.qtickets.events/120527-sbomba31-dayerteq", 
+      aboutImg: sbomba31,
+    },
+    {
+      id: 'sbombasp',
+      aboutTitle: "SBOMBA31 & DAYERTEQ",
+      aboutText: (
+        <p>
+          Александр и Макар авторы таких нашумевших треков, как <a href="https://vk.com/audio-2001149889_128149889">panacea</a>, <a href="https://vk.com/audio-2001149891_128149891">moet&chandon</a>,  <a href="https://vk.com/audio-2001149892_128149892">squirt game</a>, <a href="https://vk.com/audio602278261_456241567_f8ddf20537e056d24f">beztebya</a>, <a href="https://vk.com/audio-2001372001_127372001">Я так обожаю</a>. <br/>
+          Артисты исполнят для вас свои нашумевшие треки и множество нового материала
+        </p>
+      ),
+      aboutBtn: "Купить билет",
+      aboutSrc: "https://spb.qtickets.events/120672-sbomba-dayarteq-peterburge", 
+      aboutImg: sbomba31sp,
     },
   ];
 

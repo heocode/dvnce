@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import './afishes.css';
 import Event from './components/event';
-import xxxmanera from '../../img/manera.png';
-import lizer from '../../img/lizer.png';
-import madk1d from '../../img/madk1d.png';
-import aquakey from '../../img/aquakey.png';
+import xxxmanera from '../../img/manera.webp';
+import lizer from '../../img/lizer.webp';
+import madk1d from '../../img/madk1d.webp';
+import aquakey from '../../img/aquakey.webp';
+import sbombm from '../../img/sbombmos.webp';
+import sbombs from '../../img/sbombspb.webp';
 
 function hasPassed(time) {
     const currentDate = new Date().getTime();
@@ -96,9 +98,9 @@ function Afishes() {
           title: "AQUAKEY",
           time: "2024-07-03T19:00:00",
           place: "ACTION | Санкт-Петербург",
-          buttonText: "Купить билет",
+          buttonText: "Посмотреть фото",
           infoText: "Подробнее",
-          buttonLink: "https://spb.qtickets.events/116639-aquakey",
+          buttonLink: "/photos",
           infoLink: "/events/aquakey",
           hasPassed: hasPassed("2024-07-03T19:00:00")
         },
@@ -107,11 +109,33 @@ function Afishes() {
           title: "MADK1D",
           time: "2024-06-22T18:00:00",
           place: "STORM | Оренбург",
-          buttonText: "Купить билет",
+          buttonText: "Посмотреть фото",
           infoText: "Подробнее",
-          buttonLink: 'https://orenburg.qtickets.events/115354-dance-x-madk1d',
+          buttonLink: '/photos',
           infoLink: "/events/madk1d",
           hasPassed: hasPassed("2024-06-22T18:00:00")
+        },
+        {
+            imgSrc: sbombs,
+            title: "SBOMBA31 & DAYERTEQ",
+            time: "2024-07-25T18:00:00",
+            place: "Город | Санкт-Петербург",
+            buttonText: "Купить билет",
+            infoText: "Подробнее",
+            buttonLink: 'https://spb.qtickets.events/120672-sbomba-dayarteq-peterburge',
+            infoLink: "/events/sbombasp",
+            hasPassed: hasPassed("2024-08-01T18:00:00")
+        },
+        {
+            imgSrc: sbombm,
+            title: "SBOMBA31 & DAYERTEQ",
+            time: "2024-08-01T18:00:00",
+            place: "Город | Москва",
+            buttonText: "Купить билет",
+            infoText: "Подробнее",
+            buttonLink: 'https://moscow.qtickets.events/120527-sbomba31-dayerteq',
+            infoLink: "/events/sbombamsc",
+            hasPassed: hasPassed("2024-08-01T18:00:00")
         }
       ];
 

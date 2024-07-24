@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logoImg from './../../img/logo.png';
+import logoImg from './../../img/logo.webp';
 import './header.css';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './loader.css';
-import intro from '../../img/logo.png';
+import intro from '../../img/logo.webp';
 
 const Loader = ({ showIntro }) => {
   return (

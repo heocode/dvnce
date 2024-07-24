@@ -1,5 +1,5 @@
 import './info.css'
-import groupImg from '../../img/group.png'
+import groupImg from '../../img/group.webp'
 
 function Info() {
     return(

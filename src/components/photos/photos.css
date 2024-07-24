@@ -25,7 +25,19 @@
     margin-bottom: 10px;
 }
 
-.pictrures__btn {
+.pictures__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pictures__toggle-btn {
+    color: white;
+}
+
+.pictures__btns-item {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 20px;
     border: 2px solid white;
@@ -33,7 +45,7 @@
     color: white
 }
 
-.pictrures__btn:hover {
+.pictures__btns-item:hover {
     color: black;
     background-color: white;
     transition: .2s all ease-in-out;
@@ -70,7 +82,7 @@
         font-size: 20px;
     }
 
-    .pictrures__btn {
+    .pictures__btns-item {
         padding: 10px;
         border-radius: 20px;
     }
